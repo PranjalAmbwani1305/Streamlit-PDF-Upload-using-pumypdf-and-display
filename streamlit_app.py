@@ -21,10 +21,10 @@ def main():
             page = pdf_document[page_number]
 
            page_number = st.number_input(
-                "Select page number",
-                min_value=1,
-                max_value=len(pdf_document),
-                value=1
+            "Select page number",
+            min_value=1,
+            max_value=len(pdf_document),
+            value=1
             )
             pix = page.get_pixmap()
 
